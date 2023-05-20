@@ -36,8 +36,7 @@ public class ComunStepDefinitions {
             $(byText("Accept all")).shouldBe(visible).click();
             $(byText("Accept all")).should(disappear);
         }
-
-
     }
+
 
 }

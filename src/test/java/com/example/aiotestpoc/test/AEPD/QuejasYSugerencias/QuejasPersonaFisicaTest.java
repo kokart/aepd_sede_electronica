@@ -16,12 +16,12 @@ public class QuejasPersonaFisicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("electrónica");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronico();
+        qys.firmarPersonaFísicaUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
 
@@ -31,12 +31,12 @@ public class QuejasPersonaFisicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("postal");
         qys.introducirSugerencia();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronico();
+        qys.firmarPersonaFísicaUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
 

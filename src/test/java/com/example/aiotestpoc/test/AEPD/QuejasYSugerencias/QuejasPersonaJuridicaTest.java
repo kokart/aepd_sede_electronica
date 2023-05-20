@@ -16,12 +16,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("electronica");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Nombre propio con Notificación Postal")
@@ -30,12 +30,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("postal");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Representante Interesado Persona física Española con Notificacion Postal")
@@ -44,12 +44,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "postal");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Representante Interesado Persona física Española con Notificacion Electrónica")
@@ -58,12 +58,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "electronica");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Representante Interesado Persona física No Española con Notificación Postal")
@@ -72,12 +72,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "no española", "postal");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Representante Interesado Persona Jurídica Española con Notificación Electrónica")
@@ -86,12 +86,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "española", "electronica");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
     @Test(description = "Representante presenta escrito como Representante Interesado Persona Jurídica No Española con Notificación Postal")
@@ -100,12 +100,12 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.seleccionCertificado();
+        qys.autenticarUsuarioConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "no española", "postal");
         qys.introducirQueja();
         qys.confirmacionDatosCertificado();
-        qys.firmarConCertificadoElectronicoRepresentante();
+        qys.firmarRepresentanteUsandoCertificado();
         qys.clickObtenerJustificanteQuejaYSugerencia();
     }
 }

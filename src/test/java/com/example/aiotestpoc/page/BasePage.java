@@ -18,6 +18,8 @@ import static com.codeborne.selenide.Selenide.sleep;
 import static com.example.aiotestpoc.page.Sede.EscritoAEPD.RegistroElectronicoStepDefinitions.clickObtenerJustificante;
 
 public class BasePage {
+    public static final String C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_REPRESENTANTE_VBS = "C:\\scripts_firma\\AceptarFirmaRepresentante.vbs";
+    public static final String C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_CIUDADANO_VBS = "C:\\scripts_firma\\AceptarFirmaCiudadano.vbs";
     public WebDriver driver;
 
     // Constructor
@@ -60,21 +62,6 @@ public class BasePage {
     }
 
 
-    public void firmarConCertificadoElectronico() throws AWTException, IOException {
-        Runtime.getRuntime().exec("src/test/resources/firma_certificado_ciudadano.exe");
-    }
-
-
-    public void seleccionCertificado() throws AWTException, IOException {
-        Runtime.getRuntime().exec("src/test/resources/identificarse_certificado.exe");
-        sleep(8000);
-    }
-
-
-    public void firmarConCertificadoElectronicoRepresentante() throws IOException {
-        sleep(1000);
-        Runtime.getRuntime().exec("src/test/resources/firma_certificado_representante.exe");
-    }
     public void clickLinkPorTexto(String linkText) {
         $(byText(linkText)).click();
         if ($(byText("Accept all")).isDisplayed()) {
@@ -104,5 +91,41 @@ public class BasePage {
 
     private static void datosAdjuntosClickSiguiente() {
         $(By.id("formBoton:enviarDatos")).click();
+    }
+
+    public static void clickDnioCertificadoDigital() {
+        $(By.xpath("//*[@id='wrap']/div[2]/section/div/ul/li[1]/article/div[2]/div/fieldset/div/a/span")).click();
+    }
+
+    public static void autenticarUsuarioConCertificadoDigital() {
+        executeVBSFile("C:\\scripts_firma\\AutenticarUsuario.vbs");
+        clickDnioCertificadoDigital();
+    }
+
+    public static void firmarPersonaFísicaUsandoCertificado() {
+        clickFirmaCertificadoDigital();
+        executeVBSFile(C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_CIUDADANO_VBS);
+    }
+
+    public static void firmarRepresentanteUsandoCertificado() {
+        clickFirmaCertificadoDigital();
+        executeVBSFile(C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_REPRESENTANTE_VBS);
+    }
+
+    private static void clickFirmaCertificadoDigital() {
+        $(By.xpath("//*[@id='formlocal']/a/span[1]")).click();
+        $(By.id("buttonSign")).click();
+    }
+
+    public static void executeVBSFile(String scriptToExecute){
+        try {
+            Runtime.getRuntime().exec ( "wscript " + scriptToExecute);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+
+            e.printStackTrace();
+
+        }
+        sleep(2000);
     }
 }

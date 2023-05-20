@@ -27,7 +27,7 @@ public class QuejasYSugerenciasPage extends BasePage {
     }
 
     public void openConsultasAEPD() throws IOException {
-
+        String chromeProfilePath = "C:\\perfil_chrome\\p1";
         ChromeOptions options = new ChromeOptions();
         Configuration.browserSize = "1920x1080";
         options.addArguments("--remote-allow-origins=*");
