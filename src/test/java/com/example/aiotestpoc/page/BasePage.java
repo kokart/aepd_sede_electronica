@@ -128,4 +128,9 @@ public class BasePage {
         }
         sleep(2000);
     }
+
+    public void autenticarRepresentanteConCertificadoDigital() {
+                  executeVBSFile("C:\\scripts_firma\\AutenticarRepresentante.vbs");
+                  clickDnioCertificadoDigital();
+        }
 }

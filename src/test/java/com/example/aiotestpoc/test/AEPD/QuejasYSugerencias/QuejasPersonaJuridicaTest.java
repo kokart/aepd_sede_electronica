@@ -16,7 +16,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("electronica");
         qys.introducirQueja();
@@ -30,7 +30,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("postal");
         qys.introducirQueja();
@@ -44,7 +44,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "postal");
         qys.introducirQueja();
@@ -58,7 +58,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "electronica");
         qys.introducirQueja();
@@ -72,7 +72,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "no española", "postal");
         qys.introducirQueja();
@@ -86,7 +86,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "española", "electronica");
         qys.introducirQueja();
@@ -100,7 +100,7 @@ public class QuejasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickQueja();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "no española", "postal");
         qys.introducirQueja();

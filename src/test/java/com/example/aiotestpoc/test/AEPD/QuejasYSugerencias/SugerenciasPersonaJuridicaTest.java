@@ -16,7 +16,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("electronica");
         qys.introducirSugerencia();
@@ -30,7 +30,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirDatosDelSolicitante("postal");
         qys.introducirSugerencia();
@@ -44,7 +44,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "postal");
         qys.introducirSugerencia();
@@ -58,7 +58,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "española", "electronica");
         qys.introducirSugerencia();
@@ -72,7 +72,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("fisica", "no española", "postal");
         qys.introducirSugerencia();
@@ -86,7 +86,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "española", "electronica");
         qys.introducirSugerencia();
@@ -100,7 +100,7 @@ public class SugerenciasPersonaJuridicaTest extends BaseTest {
         qys.clickContinuarQuejaYSugerencia();
         qys.clickSugerencia();
         qys.clickElectronico();
-        qys.autenticarUsuarioConCertificadoDigital();
+        qys.autenticarRepresentanteConCertificadoDigital();
         qys.clickAccesoAlTramite();
         qys.introducirValoresRepresentanteYPersonaConNotificacion("juridica", "no española", "postal");
         qys.introducirSugerencia();
