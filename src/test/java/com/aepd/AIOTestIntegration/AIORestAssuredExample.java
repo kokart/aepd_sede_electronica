@@ -45,7 +45,7 @@ public class AIORestAssuredExample {
     public static void setupAIORestAssuredConfig() {
         RequestSpecBuilder builder = new RequestSpecBuilder();
         builder.setBaseUri("https://tcms.aioreports.com").setBasePath("/aio-tcms/api/v1");
-        builder.addHeader("Authorization", "AioAuth AIO_TOKEN");
+        builder.addHeader("Authorization", "AioAuth Y2Q1MDY0YWItOGMzOS00OGNjLTg0NGUtOGZiMmM3ODY3MjAz");
         builder.log(LogDetail.METHOD).log(LogDetail.URI);
         defaultRequestSpec = builder.build();
     }
