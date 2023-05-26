@@ -123,6 +123,8 @@ public class BasePage {
     private static void clickFirmaCertificadoDigital() {
         $(By.xpath("//*[@id='formlocal']/a/span[1]")).click();
         $(By.id("buttonSign")).click();
+        System.out.println("------------------------------");
+        System.out.println("**********************SAL");
     }
 
     public static void executeVBSFile(String scriptToExecute){
@@ -137,7 +139,7 @@ public class BasePage {
             e.printStackTrace();
 
         }
-        sleep(8000);
+
     }
 
     public void autenticarRepresentanteConCertificadoDigital() {
