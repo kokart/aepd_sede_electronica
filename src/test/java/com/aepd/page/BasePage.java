@@ -103,6 +103,8 @@ public class BasePage {
 
     public static void clickDnioCertificadoDigital() {
         $(By.xpath("//*[@id='wrap']/div[2]/section/div/ul/li[1]/article/div[2]/div/fieldset/div/a/span")).click();
+        System.out.println("------------------------------");
+        System.out.println("**********************SAL");
     }
 
     public static void autenticarUsuarioConCertificadoDigital() {
@@ -123,8 +125,7 @@ public class BasePage {
     private static void clickFirmaCertificadoDigital() {
         $(By.xpath("//*[@id='formlocal']/a/span[1]")).click();
         $(By.id("buttonSign")).click();
-        System.out.println("------------------------------");
-        System.out.println("**********************SAL");
+
     }
 
     public static void executeVBSFile(String scriptToExecute){
