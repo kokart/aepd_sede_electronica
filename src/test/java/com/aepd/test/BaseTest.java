@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import static com.aepd.page.BasePage.URL_SEDE_ELECTRONICA;
 import static com.codeborne.selenide.Condition.disappear;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -40,7 +41,7 @@ public class BaseTest {
         Configuration.downloadsFolder = AftSedeTest.downloadsFolderPath;
         options.addArguments("--remote-allow-origins=*");
         Configuration.browserCapabilities = options;
-        open("https://sede-cer-vdc-1.agpd.local/sede-electronica-web/");
+        open(URL_SEDE_ELECTRONICA);
         getWebDriver().manage().timeouts().pageLoadTimeout(80, SECONDS);
         if ($(byText("Accept all")).isDisplayed()) {
             $(byText("Accept all")).shouldBe(visible).click();
