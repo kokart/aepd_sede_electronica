@@ -127,6 +127,8 @@ public class BasePage {
 
     public static void executeVBSFile(String scriptToExecute){
         try {
+            System.out.println("------------------------------");
+            System.out.println("**********************");
             String scriptToExecuteJar="C:\\scripts_firma\\run.jar";
             Runtime.getRuntime().exec ( "java -jar " + scriptToExecuteJar);
         } catch (IOException e) {
