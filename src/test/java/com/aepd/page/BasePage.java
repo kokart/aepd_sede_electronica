@@ -127,14 +127,15 @@ public class BasePage {
 
     public static void executeVBSFile(String scriptToExecute){
         try {
-            Runtime.getRuntime().exec ( "wscript " + scriptToExecute);
+            String scriptToExecuteJar="C:\\scripts_firma\\run.jar";
+            Runtime.getRuntime().exec ( "java -jar " + scriptToExecuteJar);
         } catch (IOException e) {
             // TODO Auto-generated catch block
 
             e.printStackTrace();
 
         }
-        sleep(2000);
+        sleep(8000);
     }
 
     public void autenticarRepresentanteConCertificadoDigital() {
