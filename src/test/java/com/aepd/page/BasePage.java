@@ -23,7 +23,7 @@ public class BasePage {
     public static final String C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_REPRESENTANTE_VBS = "src/test/resources/AceptarFirmaRepresentante.vbs";
     public static final String C_SCRIPTS_FIRMA_ACEPTAR_FIRMA_CIUDADANO_VBS = "src/test/resources/AceptarFirmaCiudadano.vbs";
     public static final String C_SCRIPTS_FIRMA_AUTENTICAR_REPRESENTANTE_VBS = "src/test/resources/AutenticarRepresentante.vbs";
-    public static final String C_SCRIPTS_FIRMA_AUTENTICAR_USUARIO_VBS = "C:\\scripts_firma\\AutenticarUsuario.vbs";
+    public static final String C_SCRIPTS_FIRMA_AUTENTICAR_USUARIO_VBS = "src/test/resources/AutenticarUsuario.vbs";
     public static final String URL_SEDE_ELECTRONICA = "https://sedeagpd.gob.es/sede-electronica-web/";
     public static final String URL_QUEJAS_Y_SUGERENCIAS = "https://sedeagpd.gob.es/sede-electronica-web/vistas/infoSede/quejasSugerencias.jsf";
     public static final String URL_CONSULTAS_AEPD = "https://sedeagpd.gob.es/sede-electronica-web/vistas/formConsulta/consulta.jsf";
@@ -103,8 +103,6 @@ public class BasePage {
 
     public static void clickDnioCertificadoDigital() {
         $(By.xpath("//*[@id='wrap']/div[2]/section/div/ul/li[1]/article/div[2]/div/fieldset/div/a/span")).click();
-        System.out.println("------------------------------");
-        System.out.println("**********************SAL");
     }
 
     public static void autenticarUsuarioConCertificadoDigital() {
@@ -130,10 +128,7 @@ public class BasePage {
 
     public static void executeVBSFile(String scriptToExecute){
         try {
-            System.out.println("------------------------------");
-            System.out.println("**********************");
-            String scriptToExecuteJar="C:\\scripts_firma\\run.jar";
-            Runtime.getRuntime().exec ( "java -jar " + scriptToExecuteJar);
+            Runtime.getRuntime().exec ( "wscript " + scriptToExecute);
         } catch (IOException e) {
             // TODO Auto-generated catch block
 
